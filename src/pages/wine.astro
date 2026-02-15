@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Wine Tastings - George Severson">
+  <div class="space-y-8">
+    <h1 class="text-4xl font-bold">🍷 Wine Tasting Journal</h1>
+    <p class="text-lg text-gray-600">
+      My wine adventures, tasting notes, and ratings. This page will soon connect to my Notion database
+      and display wines automatically.
+    </p>
+
+    <!-- Coming Soon Section -->
+    <div class="bg-purple-50 border border-purple-200 rounded-lg p-8">
+      <h2 class="text-2xl font-semibold mb-4">🚧 Coming Soon</h2>
+      <p class="mb-4">
+        This page will automatically pull wine reviews from my Notion database, including:
+      </p>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>Wine name and vintage</li>
+        <li>Price and where purchased</li>
+        <li>My ratings (1-5 stars)</li>
+        <li>Detailed tasting notes</li>
+        <li>Date tasted</li>
+      </ul>
+      <p class="mt-4 text-sm text-gray-600 italic">
+        Check back soon as we integrate the Notion API!
+      </p>
+    </div>
+
+    <!-- Placeholder Example -->
+    <div class="bg-white rounded-lg shadow-md p-6">
+      <div class="flex justify-between items-start mb-4">
+        <div>
+          <h3 class="text-xl font-bold">2019 Cabernet Sauvignon</h3>
+          <p class="text-gray-600">Napa Valley | $45</p>
+        </div>
+        <div class="text-yellow-500 text-xl">★★★★☆</div>
+      </div>
+      <div class="mb-4">
+        <h4 class="font-semibold mb-2">Tasting Notes:</h4>
+        <p class="text-gray-700">
+          Rich and full-bodied with notes of dark cherry, vanilla, and subtle oak. 
+          Beautiful tannins that pair perfectly with grilled steak. This is an example
+          of how your wine reviews will appear once we connect to Notion.
+        </p>
+      </div>
+      <p class="text-sm text-gray-500">Tasted: February 15, 2024</p>
+    </div>
+  </div>
+</Layout>

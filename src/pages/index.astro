@@ -1,17 +1,50 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="George Severson - Home">
+  <div class="space-y-12">
+    <!-- Hero Section -->
+    <section class="text-center py-12">
+      <h1 class="text-5xl font-bold mb-4">George Severson</h1>
+      <p class="text-xl text-gray-600">Reader, Wine Enthusiast & Explorer</p>
+    </section>
+
+    <!-- Bio Section -->
+    <section class="prose prose-lg mx-auto">
+      <h2 class="text-3xl font-bold mb-6">About Me</h2>
+      <div class="bg-white rounded-lg shadow-md p-8">
+        <p class="mb-4">
+          Welcome! I'm George Severson, and this is my corner of the internet where I share
+          my thoughts on books, wine, and life.
+        </p>
+        <p class="mb-4">
+          <strong>Reading:</strong> I'm an avid reader with a passion for both fiction and 
+          non-fiction. You'll find my book reviews and reflections in the 
+          <a href="/books" class="text-blue-600 hover:underline">Books</a> section.
+        </p>
+        <p class="mb-4">
+          <strong>Wine:</strong> From bold reds to crisp whites, I enjoy exploring different 
+          varietals and vintages. Check out my tasting notes in the 
+          <a href="/wine" class="text-blue-600 hover:underline">Wine</a> section.
+        </p>
+        <p class="text-gray-600 italic">
+          This site is a work in progress, built with Astro and powered by Notion. 
+          Content updates automatically as I add new reviews and notes.
+        </p>
+      </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="grid md:grid-cols-2 gap-8">
+      <a href="/books" class="block bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
+        <h3 class="text-2xl font-bold mb-2">📚 Book Reports</h3>
+        <p class="text-gray-600">Explore my reading list and reviews</p>
+      </a>
+      <a href="/wine" class="block bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
+        <h3 class="text-2xl font-bold mb-2">🍷 Wine Tastings</h3>
+        <p class="text-gray-600">Browse my wine journal and ratings</p>
+      </a>
+    </section>
+  </div>
+</Layout>

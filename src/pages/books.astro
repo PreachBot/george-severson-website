@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Books - George Severson">
+  <div class="space-y-8">
+    <h1 class="text-4xl font-bold">📚 Book Reports</h1>
+    <p class="text-lg text-gray-600">
+      My reading journey, reviews, and reflections. This page will soon connect to my Notion database
+      and display books automatically.
+    </p>
+
+    <!-- Coming Soon Section -->
+    <div class="bg-blue-50 border border-blue-200 rounded-lg p-8">
+      <h2 class="text-2xl font-semibold mb-4">🚧 Coming Soon</h2>
+      <p class="mb-4">
+        This page will automatically pull book reviews from my Notion database, including:
+      </p>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li>Book titles and authors</li>
+        <li>My ratings (1-5 stars)</li>
+        <li>Full reviews and notes</li>
+        <li>Date read</li>
+      </ul>
+      <p class="mt-4 text-sm text-gray-600 italic">
+        Check back soon as we integrate the Notion API!
+      </p>
+    </div>
+
+    <!-- Placeholder Example -->
+    <div class="bg-white rounded-lg shadow-md p-6">
+      <div class="flex justify-between items-start mb-4">
+        <div>
+          <h3 class="text-xl font-bold">Example Book Title</h3>
+          <p class="text-gray-600">by Example Author</p>
+        </div>
+        <div class="text-yellow-500 text-xl">★★★★★</div>
+      </div>
+      <p class="text-gray-700 mb-2">
+        This is where your review will appear. You'll be able to write detailed thoughts
+        directly in Notion, and they'll appear here automatically.
+      </p>
+      <p class="text-sm text-gray-500">Read: February 2024</p>
+    </div>
+  </div>
+</Layout>

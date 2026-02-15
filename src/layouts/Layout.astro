@@ -1,0 +1,43 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="George Severson - Personal website, book reviews, and wine tastings" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <nav class="bg-white shadow-sm">
+      <div class="max-w-5xl mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <a href="/" class="text-2xl font-bold text-blue-600">George Severson</a>
+          <div class="space-x-6">
+            <a href="/" class="hover:text-blue-600">Home</a>
+            <a href="/books" class="hover:text-blue-600">Books</a>
+            <a href="/wine" class="hover:text-blue-600">Wine</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-4 py-12">
+      <slot />
+    </main>
+
+    <footer class="bg-white border-t mt-16">
+      <div class="max-w-5xl mx-auto px-4 py-6 text-center text-gray-600">
+        <p>&copy; {new Date().getFullYear()} George Severson. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
